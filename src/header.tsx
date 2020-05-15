@@ -1,4 +1,6 @@
 import * as React from 'react';
+import * as styles from './headerStyle.module.css';
+
 
 type HeaderProps = {
     text: string
@@ -6,7 +8,7 @@ type HeaderProps = {
 
 function Header(props: HeaderProps) {
     return(
-        <h1 className = "primary-header">{props.text}</h1>
+        <h1 className = {styles.primaryHeader}>{props.text}</h1>
     );
 }
 
