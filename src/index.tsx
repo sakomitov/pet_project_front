@@ -1,10 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Header from './header';
+import {Container} from '@material-ui/core';
+import TopBar from './topBar';
+import MainDescription from './mainDescription';
+import StartButton from './startButton';
 
 ReactDOM.render(
-    <div>
-        <Header text = "dsfsf"/>
-    </div>,
+    <Container>
+        <TopBar/>
+        <MainDescription/>
+        <StartButton/>
+    </Container>,
     document.querySelector('#root')
 );
